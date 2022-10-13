@@ -1,7 +1,7 @@
 {
   "name": "@jest-games-organization/backend-package-authorization-helpers",
   "description": "This Jest Games Organization backend package provides authorization helper methods for shared functionality.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Jest Games Organization",
   "license": "MIT",
   "main": "dist/index.cjs.js",
