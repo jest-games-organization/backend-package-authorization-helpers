@@ -1,7 +1,7 @@
+import { DecodedJwt } from '@jest-games-organization/backend-package-authorization-types';
 import * as jsonwebtoken from 'jsonwebtoken';
-import { VerifyOptions, SigningKeyCallback } from 'jsonwebtoken';
+import { SigningKeyCallback, VerifyOptions } from 'jsonwebtoken';
 import { JwksClient } from 'jwks-rsa';
-import { DecodedJwt } from '../types/DecodedJwt';
 
 /**
  * Decode the JWT (JSON Web Token).

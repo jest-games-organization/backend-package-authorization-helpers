@@ -1,8 +1,8 @@
-import { ExpressContext } from '../../types/ExpressContext';
 import { Algorithm, VerifyOptions } from 'jsonwebtoken';
 import createJWKSMock, { JWKSMock } from 'mock-jwks';
 import { JwksClient } from 'jwks-rsa';
 import { createContext } from '../../helpers/createContext';
+import { ExpressContext } from '@jest-games-organization/backend-package-authorization-types';
 
 describe('GIVEN the createContext method', () => {
   let audience: string;

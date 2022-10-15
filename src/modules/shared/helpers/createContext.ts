@@ -1,9 +1,7 @@
 import { VerifyOptions } from 'jsonwebtoken';
 import { JwksClient } from 'jwks-rsa';
-import { Context } from '../types/Context';
-import { DecodedJwt } from '../types/DecodedJwt';
-import { ExpressContext } from '../types/ExpressContext';
 import { decodeJwt } from './decodeJwt';
+import { Context, DecodedJwt, ExpressContext } from '@jest-games-organization/backend-package-authorization-types';
 
 /**
  * Create the context.
