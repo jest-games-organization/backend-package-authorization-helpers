@@ -2,7 +2,7 @@ Arguments:
   /home/conrardy/.nvm/versions/node/v16.17.0/bin/node /usr/share/yarn/bin/yarn.js publish --access public
 
 PATH: 
-  /tmp/yarn--1665704259093-0.9282485108602248:/home/conrardy/jest-games-organization/backend-package-authorization-helpers/node_modules/.bin:/home/conrardy/.config/yarn/link/node_modules/.bin:/home/conrardy/.yarn/bin:/home/conrardy/.nvm/versions/node/v16.17.0/libexec/lib/node_modules/npm/bin/node-gyp-bin:/home/conrardy/.nvm/versions/node/v16.17.0/lib/node_modules/npm/bin/node-gyp-bin:/home/conrardy/.nvm/versions/node/v16.17.0/bin/node_modules/npm/bin/node-gyp-bin:/home/conrardy/.local/bin:/home/conrardy/.rover/bin:/home/conrardy/.nvm/versions/node/v16.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/Microsoft.WindowsTerminal_1.15.2713.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/dotnet/:/mnt/c/Users/conra/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/conra/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/conra/.dotnet/tools:/snap/bin
+  /tmp/yarn--1671292317305-0.3062450060320696:/home/conrardy/jest-games-organization/backend-package-authorization-helpers/node_modules/.bin:/home/conrardy/.config/yarn/link/node_modules/.bin:/home/conrardy/.yarn/bin:/home/conrardy/.nvm/versions/node/v16.17.0/libexec/lib/node_modules/npm/bin/node-gyp-bin:/home/conrardy/.nvm/versions/node/v16.17.0/lib/node_modules/npm/bin/node-gyp-bin:/home/conrardy/.nvm/versions/node/v16.17.0/bin/node_modules/npm/bin/node-gyp-bin:/home/conrardy/.cache/cloud-code/installer/google-cloud-sdk/bin:/home/conrardy/.vscode-server/bin/1ad8d514439d5077d2b0b7ee64d2ce82a9308e5a/bin/remote-cli:/home/conrardy/.local/bin:/home/conrardy/.rover/bin:/home/conrardy/.nvm/versions/node/v16.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/Microsoft.WindowsTerminal_1.15.3466.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/dotnet/:/mnt/c/Users/conra/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/conra/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/conra/.dotnet/tools:/snap/bin
 
 Yarn version: 
   1.22.5
@@ -14,23 +14,23 @@ Platform:
   linux x64
 
 Trace: 
-  Error: canceled
-      at Interface.<anonymous> (/usr/share/yarn/lib/cli.js:137009:13)
-      at Interface.emit (node:events:513:28)
-      at Interface._ttyWrite (node:readline:1085:16)
-      at ReadStream.onkeypress (node:readline:291:10)
-      at ReadStream.emit (node:events:513:28)
-      at emitKeys (node:internal/readline/utils:357:14)
-      at emitKeys.next (<anonymous>)
-      at ReadStream.onData (node:internal/readline/emitKeypressEvents:61:36)
-      at ReadStream.emit (node:events:513:28)
-      at addChunk (node:internal/streams/readable:315:12)
+  Error: https://registry.yarnpkg.com/-/user/org.couchdb.user:jest-games: child "otp" fails because ["otp" with value "Pnt@14151232" fails to match the required pattern: /^\d+$/, "otp" length must be 64 characters long]
+      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/usr/share/yarn/lib/cli.js:140749:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141721:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141643:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1358:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
 
 npm manifest: 
   {
     "name": "@jest-games-organization/backend-package-authorization-helpers",
     "description": "This Jest Games Organization backend package provides authorization helper methods for shared functionality.",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "author": "Jest Games Organization",
     "license": "MIT",
     "main": "dist/index.cjs.js",
@@ -58,6 +58,7 @@ npm manifest:
     "devDependencies": {
       "@babel/core": "^7.19.1",
       "@babel/preset-typescript": "^7.18.6",
+      "@jest-games-organization/backend-package-authorization-types": "^1.0.0",
       "@rollup/plugin-babel": "^5.3.1",
       "@rollup/plugin-node-resolve": "^14.1.0",
       "@types/express": "^4.17.14",
@@ -72,6 +73,7 @@ npm manifest:
       "eslint-plugin-jest": "^27.0.4",
       "eslint-plugin-n": "^15.0.0",
       "eslint-plugin-promise": "^6.0.0",
+      "express": "^4.18.1",
       "jest": "^29.1.2",
       "jsonwebtoken": "^8.5.1",
       "jwks-rsa": "^2.1.4",
@@ -81,8 +83,10 @@ npm manifest:
       "rollup": "^2.79.1",
       "rollup-plugin-dts": "^4.2.2",
       "ts-jest": "^29.0.3",
-      "typescript": "^4.8.4",
-      "express": "^4.18.1"
+      "typescript": "^4.8.4"
+    },
+    "peerDependencies": {
+      "@jest-games-organization/backend-package-authorization-types": "^1.0.0"
     },
     "files": [
       "dist"
@@ -509,6 +513,11 @@ Lockfile:
     version "0.1.3"
     resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.3.tgz#e45e384e4b8ec16bce2fd903af78450f6bf7ec98"
     integrity sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==
+  
+  "@jest-games-organization/backend-package-authorization-types@^1.0.0":
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/@jest-games-organization/backend-package-authorization-types/-/backend-package-authorization-types-1.0.0.tgz#b53f089cc4101ba76493727bf5598f98a4b8d01d"
+    integrity sha512-Bz/NHYXW70AXyJEuvrtMVCHHwIC+ySfR403mTA3QvmDmrmgVrdVVdOSIasBI2pS9vNFNYD4VOE3+SVok2AqLAw==
   
   "@jest/console@^29.1.2":
     version "29.1.2"

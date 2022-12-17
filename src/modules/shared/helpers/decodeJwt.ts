@@ -1,5 +1,5 @@
 import { DecodedJwt } from '@jest-games-organization/backend-package-authorization-types';
-import * as jsonwebtoken from 'jsonwebtoken';
+import * as jwtPackage from 'jsonwebtoken';
 import { SigningKeyCallback, VerifyOptions } from 'jsonwebtoken';
 import { JwksClient } from 'jwks-rsa';
 
@@ -21,7 +21,7 @@ export const decodeJwt = async (
   };
   // Verify the JWT (JSON Web Token) and get the payload
   return new Promise((resolve) =>
-    jsonwebtoken.verify(jwt, getKey, { ...config.verifyOptions, complete: true }, (_, decoded) => {
+    jwtPackage.verify(jwt, getKey, { ...config.verifyOptions, complete: true }, (_, decoded) => {
       resolve(decoded as DecodedJwt);
     }),
   );
